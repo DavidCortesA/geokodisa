@@ -37,6 +37,14 @@ h1{
   font-size: 10em;
 }
 
+.nav-link{
+  color: var(--black);
+}
+
+.nav-item a:hover{
+  border-bottom: var(--primary-color);
+}
+
 .orange{
   background-color: var(--primary-color);
 }
