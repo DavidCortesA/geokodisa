@@ -32,7 +32,7 @@ section{
   position: relative;
 }
 
-h1{
+section h1{
   background-color: var(--secundary-color);
   font-size: 10em;
 }
@@ -51,6 +51,25 @@ h1{
 }
 .white{
   background-color: var(--white);
+}
+
+.blue{
+  color:var(--secundary-color);
+}
+.letter-spacing{
+  letter-spacing: 1px;
+}
+
+button{
+  border: none;
+}
+
+.mecanica, .sub, .suelo, .pruebas{
+  background: no-repeat center/cover url(../image/camion.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px !important;
 }
 
 @media (max-width: 770px){
