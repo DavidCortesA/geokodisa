@@ -38,11 +38,12 @@ h1{
 }
 
 .nav-link{
-  color: var(--black);
+  color: var(--black) !important;
+  margin-bottom: 1px !important;
 }
 
-.nav-item a:hover{
-  border-bottom: var(--primary-color);
+.nav-link:hover{
+  border-bottom: 5px solid var(--primary-color);
 }
 
 .orange{
