@@ -39,29 +39,50 @@ section h1{
 
 .nav-link{
   color: var(--black) !important;
-  margin-bottom: 1px !important;
 }
 
-.nav-link:hover{
+.nav-link .active:hover{
   border-bottom: 5px solid var(--primary-color);
 }
 
 .orange{
   background-color: var(--primary-color);
 }
+
+.orange-text{
+  color: var(--primary-color);
+}
+
 .white{
   background-color: var(--white);
+}
+
+.white-text{
+  color: var(--white);
 }
 
 .blue{
   color:var(--secundary-color);
 }
+
+.blue-bg{
+  background-color: var(--secundary-color);
+}
+
+svg{
+  fill: var(--primary-color);
+}
+
 .letter-spacing{
   letter-spacing: 1px;
 }
 
 button{
   border: none;
+}
+
+.button:hover{
+  color: var(--white);
 }
 
 .mecanica, .sub, .suelo, .pruebas{
