@@ -15,21 +15,10 @@
 }
 
 header{
-  background: no-repeat center/cover url(../image/camion.jpg);
-}
-
-header::before{
-  content: " ";
-  background-color: var(--secundary-color);
-  opacity: .5;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-}
-
-section{
-  z-index: 7;
-  position: relative;
+  background:linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/camion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section h1{
@@ -85,8 +74,26 @@ button{
   color: var(--white);
 }
 
+.mision-vision{
+  background: linear-gradient(0deg, rgba(70, 84, 95, 0.7), rgba(70, 84, 95, 0.7)), url("/image/image3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profesionistas{
+  background: linear-gradient(0deg, rgba(70, 84, 95, 0.7), rgba(70, 84, 95, 0.7)), url("/image/ingeniero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mecanica, .sub, .suelo, .pruebas{
-  background: no-repeat center/cover url(../image/camion.jpg);
+  background: linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url("/image/camion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
