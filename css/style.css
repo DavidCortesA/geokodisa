@@ -21,6 +21,13 @@ header{
   background-size: cover;
 }
 
+/* #nosotros{
+  background:linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/Imagen1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 section h1{
   background-color: var(--secundary-color);
   font-size: 10em;
@@ -98,6 +105,10 @@ button{
   align-items: center;
   justify-content: center;
   height: 150px !important;
+}
+
+.active-servicios{
+  text-decoration: underline;
 }
 
 @media (max-width: 770px){
