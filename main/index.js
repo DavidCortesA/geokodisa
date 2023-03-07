@@ -14,7 +14,7 @@ mecanica.onclick = () =>{
 
   texto.innerHTML= "Estudios enfocados al análisis de la resistencia a la deformación, en materiales naturales o antropomorfos, así como su respuesta ante la realización de proyectos civiles a corto y largo plazo, dichos estudios son realizados bajo las normativas internacionales competentes, lo cual garantiza el mejor diseño de cimentación.";
 
-  imagen.style.background = "url(/image/imagen4.jpg)";
+  imagen.style.background = "url(/image/Imagen4.jpg)";
   imagen.style.height = "350px";
   imagen.style.backgroundPosition = "center"
   imagen.style.backgroundSize = "cover";
@@ -33,7 +33,7 @@ obtencion.onclick = () =>{
 
   texto.innerHTML= "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
 
-  imagen.style.background = "url(/image/imagen4.jpg)";
+  imagen.style.background = "url(/image/Imagen4.jpg)";
   imagen.style.height = "350px";
   imagen.style.backgroundPosition = "center"
   imagen.style.backgroundSize = "cover";
@@ -71,7 +71,7 @@ prueba.onclick = () =>{
 
   texto.innerHTML= "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares ya que estamos acreditados por la EMA y regidos bajo la NOM-138-SEMARNAT-SSA1-2012, BAJO LOS MAYORES ESTANDARES.";
 
-  imagen.style.background = "url(/image/imagen4.jpg)";
+  imagen.style.background = "url(/image/Imagen4.jpg)";
   imagen.style.height = "350px";
   imagen.style.backgroundPosition = "center";
   imagen.style.backgroundSize = "cover";
