@@ -5,6 +5,36 @@ const obtencion = document.querySelector(".obtencion");
 const prueba = document.querySelector(".prueba");
 const mecanica = document.querySelector(".mecanica-servicios");
 const header = document.querySelector("header");
+const title = document.querySelector(".hero-title");
+const text = document.querySelector(".hero-text");
+const titleSec = document.querySelector(".title-prof");
+const text2 = document.querySelector(".text-prof");
+const serviciosTexto = querySelector(".text-servicios");
+
+
+const size = () => {
+  const wSize = window.outerWidth;
+  if(wSize <= 767){
+    title.style.fontSize = "35px";
+    text.classList.remove("w-25");
+    title.classList.remove("w-50");
+    titleSec.style.fontSize = "2rem";
+  }else if(wSize <= 992){
+    title.style.fontSize = "40px";
+    titleSec.style.fontSize = "4rem";
+    text.style.fontSize="24px";
+    text.classList.add("w-25");
+    title.classList.add("w-50");
+  }else{
+    title.style.fontSize = "64px";
+    text.style.fontSize="30px";
+    text.classList.add("w-25");
+    title.classList.add("w-50");
+  }
+}
+
+window.addEventListener('resize', size);
+window.addEventListener('load', size);
 
 mecanica.onclick = () =>{
   prueba.classList.remove("active-servicios");
@@ -81,4 +111,5 @@ prueba.onclick = () =>{
   header.style.backgroundSize = "cover";
   header.style.backgroundRepeat = "no-repeat";
 }
+
 
