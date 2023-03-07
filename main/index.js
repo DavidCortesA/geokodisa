@@ -52,12 +52,12 @@ muestras.onclick = () =>{
 
   texto.innerHTML= "muestreo de aguas subterráneas someras y análisis de aguas contaminadas con hidrocarburos, compuestos volátiles, regidos bajo las normas de CONAGUA y semanario para evaluación de materiales disueltos.";
 
-  imagen.style.background = "url(/image/imagen4.jpg)";
+  imagen.style.background = "url(/image/Imagen4.jpg)";
   imagen.style.height = "350px";
   imagen.style.backgroundPosition = "center"
   imagen.style.backgroundSize = "cover";
 
-  header.style.background = "linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/camion.jpg)"
+  header.style.background = "linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url('/image/camion.jpg')"
   header.style.backgroundPosition = "center";
   header.style.backgroundSize = "cover";
   header.style.backgroundRepeat = "no-repeat";
@@ -76,7 +76,7 @@ prueba.onclick = () =>{
   imagen.style.backgroundPosition = "center";
   imagen.style.backgroundSize = "cover";
 
-  header.style.background = "linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/imagen2.jpg)";
+  header.style.background = "linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url('/image/imagen2.jpg')";
   header.style.backgroundPosition = "center";
   header.style.backgroundSize = "cover";
   header.style.backgroundRepeat = "no-repeat";
