@@ -1,27 +1,25 @@
 <?php
-  // Recoger datos del formulario
-  $nombre = $_POST['nombre'];
-  $correo = $_POST['correo'];
-  $telefono = $_POST['telefono'];
-  $mensaje = $_POST['mensaje'];
+  if(isset($_POST['submit'])) {
+      // Recopilar información del formulario
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $phone = $_POST['phone'];
+      $message = $_POST['message'];
 
-  // Crear mensaje de correo electrónico
-  $destinatario = "david.cortes.ayala@hotmail.com"; // Cambiar por tu correo electrónico
-  $asunto = "Nuevo mensaje de formulario";
-  $cuerpo = "Nombre: " . $nombre . "\r\n";
-  $cuerpo .= "Correo electrónico: " . $correo . "\r\n";
-  $cuerpo .= "Teléfono: " . $telefono . "\r\n";
-  $cuerpo .= "Mensaje: " . $mensaje;
+      // Configurar correo electrónico
+      $to = "destinatario@dominio.com";
+      $subject = "Mensaje del formulario de contacto";
+      $body = "Nombre: $name\nCorreo electrónico: $email\nTeléfono: $phone\nMensaje:\n$message";
 
-  // Enviar correo electrónico
-  $headers = "From: " . $correo . "\r\n";
-  $headers .= "Reply-To: " . $correo . "\r\n";
-  $headers .= "X-Mailer: PHP/" . phpversion();
-  if (mail($destinatario, $asunto, $cuerpo, $headers)) {
-    // Correo enviado correctamente
-    echo "<script>alert('Correo enviado correctamente.');</script>";
-  } else {
-    // Error al enviar el correo
-    echo "<script>alert('Error al enviar el correo.');</script>";
+      // Enviar correo electrónico
+      if (mail($to, $subject, $body)) {
+          // Mensaje de confirmación en javascript
+          echo "<script>alert('Su mensaje ha sido enviado');</script>";
+          header("Location: index.html");
+          exit;
+      } else {
+          // Mensaje de error en javascript
+          echo "<script>alert('Ocurrió un error al enviar su mensaje');</script>";
+      }
   }
 ?>

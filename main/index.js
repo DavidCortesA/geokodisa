@@ -112,4 +112,9 @@ prueba.onclick = () =>{
   header.style.backgroundRepeat = "no-repeat";
 }
 
-
+function confirmSubmit() {
+  var response = confirm("¿Está seguro de enviar este formulario?");
+  if (response == true) {
+      document.getElementById("contact-form").submit();
+  }
+}
