@@ -1,13 +1,13 @@
 <?php
   if(isset($_POST['submit'])) {
       // Recopilar información del formulario
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $phone = $_POST['phone'];
-      $message = $_POST['message'];
+      $name = $_POST['nombre'];
+      $email = $_POST['correo'];
+      $phone = $_POST['telefono'];
+      $message = $_POST['mensaje'];
 
       // Configurar correo electrónico
-      $to = "destinatario@dominio.com";
+      $to = "davido_jonas@hotmail.com";
       $subject = "Mensaje del formulario de contacto";
       $body = "Nombre: $name\nCorreo electrónico: $email\nTeléfono: $phone\nMensaje:\n$message";
 
@@ -15,7 +15,7 @@
       if (mail($to, $subject, $body)) {
           // Mensaje de confirmación en javascript
           echo "<script>alert('Su mensaje ha sido enviado');</script>";
-          header("Location: ./index.html");
+          header("Location: index.html");
           exit;
       } else {
           // Mensaje de error en javascript
