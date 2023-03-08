@@ -97,7 +97,7 @@
   <section class="w-100 vh-auto blue-bg py-3" id="contacto">
     <div class="form container">
       <h3 class="text-uppercase text-center">Contactanos</h3>
-      <form action="" method="get" class="container">
+      <form action="./php/enviar_correo.php" method="post" class="container">
         <div class="form-group mb-3">
           <label for="nombre" class="form-label text-uppercase orange-text fw-bold">Nombre</label>
           <input type="text" class="form-control input-border" id="nombre" autocomplete="on" placeholder="Juan Perez" name="nombre" required>
@@ -112,7 +112,7 @@
         </div>
         <div class="form-group mb-3">
           <label for="mensaje" class="form-label text-uppercase orange-text fw-bold">Mensaje</label>
-          <textarea type="text" class="form-control" id="mensaje" rows="5" placeholder="¿Como podemos ayudarte?"></textarea>
+          <textarea type="text" class="form-control" id="mensaje" rows="5" placeholder="¿Como podemos ayudarte?" name="mensaje"></textarea>
         </div>
         <button type="submit" class="orange rounded px-5 py-2 text-uppercase blue fw-bold button">Enviar</button>
       </form>

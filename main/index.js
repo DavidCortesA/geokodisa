@@ -9,7 +9,7 @@ const title = document.querySelector(".hero-title");
 const text = document.querySelector(".hero-text");
 const titleSec = document.querySelector(".title-prof");
 const text2 = document.querySelector(".text-prof");
-const serviciosTexto = querySelector(".text-servicios");
+const serviciosTexto = document.querySelector(".text-servicios");
 
 
 const size = () => {
