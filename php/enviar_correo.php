@@ -15,7 +15,7 @@
       if (mail($to, $subject, $body)) {
           // Mensaje de confirmación en javascript
           echo "<script>alert('Su mensaje ha sido enviado');</script>";
-          header("Location: index.html");
+          header("Location: ./index.html");
           exit;
       } else {
           // Mensaje de error en javascript
