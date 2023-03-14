@@ -10,12 +10,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  color: var(--white);
   font-family: var(--font);
 }
 
 header{
   background:linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/camion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#equipo{
+  background:linear-gradient(0deg, rgba(70, 84, 95, 0.5), rgba(70, 84, 95, 0.5)), url(/image/equipo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
