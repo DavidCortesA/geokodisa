@@ -9,6 +9,7 @@ const title = document.querySelector(".hero-title");
 const text = document.querySelector(".hero-text");
 const titleSec = document.querySelector(".title-prof");
 const text2 = document.querySelector(".text-prof");
+const servicios = document.querySelector(".servicios-text");
 const serviciosTexto = document.querySelector(".text-servicios");
 
 
@@ -19,12 +20,14 @@ const size = () => {
     text.classList.remove("w-25");
     title.classList.remove("w-50");
     titleSec.style.fontSize = "2rem";
-  }else if(wSize <= 992){
+    servicios.style.flexDirection = "column";
+  }else if(wSize <= 992) {
     title.style.fontSize = "40px";
     titleSec.style.fontSize = "4rem";
     text.style.fontSize="24px";
     text.classList.add("w-25");
     title.classList.add("w-50");
+    servicios.style.flexDirection = "column";
   }else{
     title.style.fontSize = "64px";
     text.style.fontSize="30px";
