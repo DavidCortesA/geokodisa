@@ -8,7 +8,7 @@ const Navbar = () => {
   <nav className="navbar navbar-expand-md fixed-top navbar-light white">
     <div className="container">
       <NavLink className="navbar-brand" to="/">
-        <img src={GeokodisaLogo} style={{height: 45, mixBlendMode: 'darken'}} />
+        <img src={GeokodisaLogo} style={{height: '45px', mixBlendMode: 'darken'}} />
       </NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="collapse" aria-expanded="false">
         <span className="navbar-toggler-icon" />
