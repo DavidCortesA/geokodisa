@@ -114,24 +114,3 @@ prueba.onclick = () =>{
   header.style.backgroundSize = "cover";
   header.style.backgroundRepeat = "no-repeat";
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-  var sendBtn = document.getElementById('send-btn');
-  sendBtn.addEventListener('click', function() {
-    var form = document.getElementsByTagName('form')[0];
-    var formData = new FormData(form);
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'enviar_correo.php');
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        document.getElementById('confirm-modal').style.display = 'block';
-      }
-    };
-    xhr.send(formData);
-  });
-
-  var confirmBtn = document.getElementById('confirm-btn');
-  confirmBtn.addEventListener('click', function() {
-    document.getElementById('confirm-modal').style.display = 'none';
-  });
-});

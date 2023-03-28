@@ -1,5 +1,7 @@
 <?php
   if(isset($_POST['submit'])) {
+    // Verificar si el campo antibot está vacío
+    if (!$_POST['antibot']) {
       // Recopilar información del formulario
       $name = $_POST['nombre'];
       $email = $_POST['correo'];
@@ -14,14 +16,19 @@
 
       // Enviar correo electrónico
       if (mail($to, $subject, $body)) {
-          // Mensaje de confirmación en javascript
-          echo "<script>
-                  alert('Su mensaje ha sido enviado');
-                  window.location.href='index.html#contacto';
-                </script>";
+        echo "<script>
+          document.getElementById('confirm-modal').style.display = 'block';
+        </script>";
       } else {
-          // Mensaje de error en javascript
-          echo "<script>alert('Ocurrió un error al enviar su mensaje');</script>";
+        echo "<script>
+          alert('Ocurrió un error al enviar su mensaje');
+        </script>";
       }
+    } else {
+      // Si el campo antibot no está vacío, asumimos que es un bot
+      echo "<script>
+        alert('Lo sentimos, parece que eres un bot');
+      </script>";
+    }
   }
 ?>
