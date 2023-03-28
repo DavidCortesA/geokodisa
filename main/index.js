@@ -64,8 +64,8 @@ obtencion.onclick = () =>{
   obtencion.classList.add("active-servicios");
   mecanica.classList.remove("active-servicios");
 
-  texto.innerHTML= "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
-
+  texto.innerHTML= "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares.";
+ 
   imagen.style.background = "url('/image/muestra de suelo 2.png')";
   imagen.style.height = "350px";
   imagen.style.backgroundPosition = "center"
@@ -102,7 +102,7 @@ prueba.onclick = () =>{
   obtencion.classList.remove("active-servicios");
   mecanica.classList.remove("active-servicios");
 
-  texto.innerHTML= "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares.";
+  texto.innerHTML= "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
 
   imagen.style.background = "url(/image/imagen2.jpg)";
   imagen.style.height = "350px";
@@ -115,9 +115,23 @@ prueba.onclick = () =>{
   header.style.backgroundRepeat = "no-repeat";
 }
 
-function confirmSubmit() {
-  var response = confirm("¿Está seguro de enviar este formulario?");
-  if (response == true) {
-      document.getElementById("contact-form").submit();
-  }
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var sendBtn = document.getElementById('send-btn');
+  sendBtn.addEventListener('click', function() {
+    var form = document.getElementsByTagName('form')[0];
+    var formData = new FormData(form);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'enviar_correo.php');
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        document.getElementById('confirm-modal').style.display = 'block';
+      }
+    };
+    xhr.send(formData);
+  });
+
+  var confirmBtn = document.getElementById('confirm-btn');
+  confirmBtn.addEventListener('click', function() {
+    document.getElementById('confirm-modal').style.display = 'none';
+  });
+});
