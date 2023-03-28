@@ -18,6 +18,10 @@
       if (mail($to, $subject, $body)) {
         echo "<script>
           document.getElementById('confirm-modal').style.display = 'block';
+          document.getElementById('nombre').value = '';
+          document.getElementById('correo').value = '';
+          document.getElementById('telefono').value = '';
+          document.getElementById('mensaje').value = '';
         </script>";
       } else {
         echo "<script>
@@ -32,3 +36,4 @@
     }
   }
 ?>
+
