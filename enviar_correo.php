@@ -8,7 +8,7 @@
       $message = $_POST['mensaje'];
 
       // Configurar correo electrónico
-      $to = "geek.cias@gmail.com";
+      $to = "info@geokodisa.com";
       $subject = "Mensaje del formulario de contacto";
       $body = "Nombre: $name\nCorreo electrónico: $email\nTeléfono: $phone\nMensaje:\n$message";
       
