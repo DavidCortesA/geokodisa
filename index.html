@@ -101,7 +101,7 @@
   <section class="w-100 vh-auto blue-bg py-3" id="contacto">
     <div class="form container">
       <h3 class="text-uppercase text-center">Contactanos</h3>
-      <form action="/enviar_correo.php" id="contact-form" method="post" class="container">
+      <form action="./enviar_correo.php" id="contact-form" method="post" class="container">
         <div class="form-group mb-3">
           <label for="nombre" class="form-label text-uppercase orange-text fw-bold">Nombre</label>
           <input type="text" class="form-control input-border" id="nombre" autocomplete="on" placeholder="Juan Perez" name="nombre" required>
@@ -116,10 +116,10 @@
         </div>
         <div class="form-group mb-3">
           <label for="mensaje" class="form-label text-uppercase orange-text fw-bold">Mensaje</label>
-          <textarea type="text" class="form-control" id="mensaje" rows="5" placeholder="¿Como podemos ayudarte?" name="mensaje"></textarea>
+          <textarea type="text" class="form-control" id="mensaje" rows="5" placeholder="¿Como podemos ayudarte?" name="mensaje" required></textarea>
         </div>
         <input type="text" name="antibot" style="display:none;"> 
-        <button type="submit" name="submit" class="orange rounded px-5 py-2 text-uppercase blue fw-bold button" id="send-btn">Enviar</button>
+        <button type="submit" name="submit" class="orange rounded px-5 py-2 text-uppercase blue fw-bold button" id="send-btn" onclick="confirmSubmit()">Enviar</button>
       </form>
       <h3 class="orange-text text-uppercase text-center pt-3">Comunicate, será un placer escucharte</h3>
     </div>
@@ -128,37 +128,12 @@
     <p>¡Gracias por enviar tu mensaje!</p>
     <button id="confirm-btn">Aceptar</button>
   </div>
+  <div id="failure-modal" style="display: none;">
+    <p>Te hace falta informacion</p>
+    <button id="failure-btn">Volver</button>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
   <script src="/main/index.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var sendBtn = document.getElementById('send-btn');
-      sendBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-        var form = document.getElementsByTagName('form')[0];
-
-        // Verificar si el campo antibot está vacío
-        if (form.antibot.value) {
-          return false; // Si está lleno, asumimos que es un bot
-        }
-
-        var formData = new FormData(form);
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'enviar_correo.php');
-        xhr.onload = function() {
-          if (xhr.status === 200) {
-            document.getElementById('confirm-modal').style.display = 'block';
-          }
-        };
-        xhr.send(formData);
-      });
-
-      var confirmBtn = document.getElementById('confirm-btn');
-      confirmBtn.addEventListener('click', function() {
-        document.getElementById('confirm-modal').style.display = 'none';
-      });
-    });
-  </script>
 </body>
 </html>
