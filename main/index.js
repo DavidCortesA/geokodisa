@@ -66,7 +66,7 @@ obtencion.onclick = () => {
   mecanica.classList.remove("active-servicios");
 
   texto.innerHTML =
-    "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
+  "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares.";
 
   imagen.style.background = "url('/image/muestra de suelo 2.png')";
   imagen.style.height = "350px";
@@ -108,7 +108,7 @@ prueba.onclick = () => {
   mecanica.classList.remove("active-servicios");
 
   texto.innerHTML =
-    "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares.";
+    "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
 
   imagen.style.background = "url(/image/imagen2.jpg)";
   imagen.style.height = "350px";
@@ -144,3 +144,4 @@ function confirmSubmit() {
     document.getElementById('confirm-modal').style.display = 'none';
   });
 }
+
