@@ -48,7 +48,7 @@ mecanica.onclick = () => {
     "Estudios enfocados al análisis de la resistencia a la deformación, en materiales naturales o antropomorfos, así como su respuesta ante la realización de proyectos civiles a corto y largo plazo, dichos estudios son realizados bajo las normativas internacionales competentes, lo cual garantiza el mejor diseño de cimentación.";
 
   imagen.style.background = "url(/image/imagen4.jpg)";
-  imagen.style.height = "350px";
+  imagen.style.height = "100vh";
   imagen.style.backgroundPosition = "center";
   imagen.style.backgroundSize = "cover";
 
@@ -69,7 +69,7 @@ obtencion.onclick = () => {
   "muestreo para la identificación de contaminantes por hidrocarburos totales, solidos, gases o líquidos que garanticen proyectos ambientales bajo los mayores estándares.";
 
   imagen.style.background = "url('/image/muestra de suelo 2.png')";
-  imagen.style.height = "350px";
+  imagen.style.height = "100vh";
   imagen.style.backgroundPosition = "center";
   imagen.style.backgroundSize = "cover";
 
@@ -90,7 +90,7 @@ muestras.onclick = () => {
     "muestreo de aguas subterráneas someras y análisis de aguas contaminadas con hidrocarburos, compuestos volátiles, regidos bajo las normas de CONAGUA y SEMARNAT para evaluación de materiales disueltos.";
 
   imagen.style.background = "url('/image/camion 3.jpg')";
-  imagen.style.height = "350px";
+  imagen.style.height = "100vh";
   imagen.style.backgroundPosition = "bottom";
   imagen.style.backgroundSize = "cover";
 
@@ -111,7 +111,7 @@ prueba.onclick = () => {
     "pruebas de infiltración in situ, para establecer la cantidad de fluidos que puede recibir un suelo y complementar proyectos agrícolas, hidrológicos, civiles y riesgo geológico, obtenidos mediante las especificaciones de las nom ASTM y USBR, que garantizan la fiabilidad de los resultados.";
 
   imagen.style.background = "url(/image/imagen2.jpg)";
-  imagen.style.height = "350px";
+  imagen.style.height = "100vh";
   imagen.style.backgroundPosition = "center";
   imagen.style.backgroundSize = "cover";
 
